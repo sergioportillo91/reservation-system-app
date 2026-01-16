@@ -1,4 +1,5 @@
 package service;
 
-public class NotificationService {
+public interface NotificationService {
+    void notify(String message);
 }

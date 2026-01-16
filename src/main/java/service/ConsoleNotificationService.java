@@ -1,4 +1,9 @@
 package service;
 
-public class ConsoleNotificationService {
+public class ConsoleNotificationService implements NotificationService {
+
+    @Override
+    public void notify(String message) {
+        System.out.println("[NOTIFICACIÓN] " + message);
+    }
 }
